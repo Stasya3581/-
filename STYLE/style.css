@@ -87,10 +87,10 @@ section{
     margin-bottom: 20px;
 }
 .button_choice {
-    border-right: 1px solid #E5E5E5;
+    /* border-right: 1px solid #E5E5E5;
     padding: 5px 20px;
     font-size: 12px;
-    color: #C6C6C6;
+    color: #C6C6C6; */
 
 }
 .sub_tittle {
@@ -111,7 +111,13 @@ input.input_cash {
     height: 50px;
     margin: 7px;
 }
-
+ 
+.selection_text {
+    border-right: 1px solid #E5E5E5;
+    padding: 5px 20px;
+    font-size: 12px;
+    color: #C6C6C6;
+}
 
 /* задвоить надо */
 .button_currency:checked ~ .selection_text {
@@ -119,7 +125,11 @@ input.input_cash {
     
 }
 
-.button_choice.two.button_currency:checked ~ .selection_text {
+/* .button_choice.two.button_currency:checked ~ .selection_text {
     background-color: #833AE0;
     
-}
+} */
+
+/* .button_choice:has( > input:checked) {
+    background-color: #833AE0;
+} */
